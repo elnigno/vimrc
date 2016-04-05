@@ -2,6 +2,8 @@
 set nocompatible "Ignore Vi compatibility"
 set history=500  "Remember commands and search patterns"
 set visualbell   "Show bell, don't play it"
+syntax on "Syntax highlighting"
+filetype plugin indent on "Smart filetype related features"
 
 "-- APPEARANCE --"
 set background=dark "Dark background"
@@ -17,15 +19,15 @@ set smarttab     "Tab inserts spaces"
 set smartindent  "Tab inserts spaces"
 set tabstop=4    "Tab is 4 spaces wide"
 
-"-- STATUS LINE "
+"-- BOTTOM LINE "
 set ruler     "Show cursor position"
 set showcmd   "Show partial command"
-"set wildmenu"  "Wild Menu"
 
 "-- SEARCH --"
 set hlsearch  "Highlight last search"
 set incsearch "Incremental search"
 set smartcase "Case-sensitive search only if searching with upper-case chars"
 
-syntax on "Syntax highlighting"
-filetype plugin indent on "Smart filetype related features"
+"-- VIM-AIRLINE --"
+set laststatus=2
+"let g:airline#extensions#tabline#enabled = 1"
