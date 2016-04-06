@@ -13,6 +13,7 @@ set number          "Show line number"
 
 "-- INDENTATION --"
 set autoindent   "Tab inserts spaces"
+set expandtab    "Expand Tag to spaces in Insert mode"
 set shiftround   "Round spaces with << and >>"
 set shiftwidth=4 "Number of spaces of autoindent unit"
 set smarttab     "Tab inserts spaces"
